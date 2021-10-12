@@ -1,0 +1,7 @@
+#Evita el acceso a las url directamente
+Options All -Indexes
+
+#Url Amigables
+RewriteEngine On
+
+RewriteRule ^([-a-zA-Z0-9]+)$ index.php?ruta=$1 
